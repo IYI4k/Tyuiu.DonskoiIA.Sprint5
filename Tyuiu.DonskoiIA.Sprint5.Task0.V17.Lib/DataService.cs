@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task0.V17.Lib
     {
         public string SaveToFileTextData(int x)
         {
+            CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
             string path = Directory.GetCurrentDirectory() + "\\OutPutFileTask0.txt";
             File.WriteAllText(path, Math.Round(2.4 * x * x * x + 0.4 * x * x - 1.4 * x + 4.1, 3) + "");
             return path;
