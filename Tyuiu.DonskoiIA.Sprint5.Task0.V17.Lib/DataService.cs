@@ -16,7 +16,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task0.V17.Lib
             CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("ru-RU");
             string path = Directory.GetCurrentDirectory() + "\\OutPutFileTask0.txt";
             File.WriteAllText(path, Math.Round(2.4 * x * x * x + 0.4 * x * x - 1.4 * x + 4.1, 3) + "");
-            return Convert.ToString(Math.Round(2.4 * x * x * x + 0.4 * x * x - 1.4 * x + 4.1, 3));
+            return path;
         }
     }
 }
