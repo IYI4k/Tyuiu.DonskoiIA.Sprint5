@@ -13,7 +13,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task1.V24.Lib
     {
         public string SaveToFileTextData(int startValue, int stopValue)
         {
-            stopValue++;
+            //stopValue++;
 
             string ans = "";
 
@@ -37,6 +37,16 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task1.V24.Lib
                 }
                 ans += Math.Round(3 * Math.Cos(i) / temp + Math.Sin(i) - 5 * i - 2, 2) + Environment.NewLine;
             }
+
+            temp = 4 * stopValue - 0.5;
+            {
+                ans += "0";
+                goto RET;
+            }
+            ans += Math.Round(3 * Math.Cos(stopValue) / temp + Math.Sin(stopValue) - 5 * stopValue - 2, 2);
+
+
+        RET:
             File.WriteAllText(path, ans);
             /*
             temp = 4 * stopValue - 0.5;
