@@ -10,7 +10,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task0.V17.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            string path = "C:\\Users\\User\\source\\repos\\Tyuiu.DonskoiIA.Sprint5\\Tyuiu.DonskoiIA.Sprint5.Task0.V17.Test\\bin\\Debug\\net8.0\\OutPutFileTask0.txt";
+            string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask0.txt" });
             var res = ds.SaveToFileTextData(0);
             Assert.AreEqual(path, res);
         }
