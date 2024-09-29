@@ -13,6 +13,8 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task1.V24.Lib
     {
         public string SaveToFileTextData(int startValue, int stopValue)
         {
+            stopValue++;
+
             string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask1.txt" });
 
             FileInfo f = new FileInfo(path);
@@ -33,7 +35,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task1.V24.Lib
                 }
                 File.AppendAllText(path,Math.Round(3 * Math.Cos(i) / temp + Math.Sin(i) - 5 * i - 2, 2) + Environment.NewLine);
             }
-
+            /*
             temp = 4 * stopValue - 0.5;
 
             if (temp == 0)
@@ -43,7 +45,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task1.V24.Lib
                 return path;
             }
 
-            File.AppendAllText(path, Math.Round(3 * Math.Cos(stopValue) / temp + Math.Sin(stopValue) - 5 * stopValue - 2, 2) + "");
+            File.AppendAllText(path, Math.Round(3 * Math.Cos(stopValue) / temp + Math.Sin(stopValue) - 5 * stopValue - 2, 2) + "");*/
 
             return path;
         }
