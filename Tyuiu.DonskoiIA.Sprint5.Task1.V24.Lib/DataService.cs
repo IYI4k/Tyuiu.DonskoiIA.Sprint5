@@ -39,7 +39,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task1.V24.Lib
             }
 
             temp = 4 * stopValue - 0.5;
-            {
+            if (temp == 0) {
                 ans += "0";
                 goto RET;
             }
