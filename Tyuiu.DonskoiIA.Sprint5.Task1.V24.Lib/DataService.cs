@@ -15,6 +15,8 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task1.V24.Lib
         {
             stopValue++;
 
+            string ans = "";
+
             string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask1.txt" });
 
             FileInfo f = new FileInfo(path);
@@ -30,11 +32,12 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task1.V24.Lib
                 temp = 4 * i - 0.5;
                 if (temp == 0)
                 {
-                    File.AppendAllText(path, "0" + Environment.NewLine);
+                    ans += "0" + Environment.NewLine;
                     continue;
                 }
-                File.AppendAllText(path,Math.Round(3 * Math.Cos(i) / temp + Math.Sin(i) - 5 * i - 2, 2) + Environment.NewLine);
+                ans += Math.Round(3 * Math.Cos(i) / temp + Math.Sin(i) - 5 * i - 2, 2) + Environment.NewLine;
             }
+            File.WriteAllText(path, ans);
             /*
             temp = 4 * stopValue - 0.5;
 
