@@ -33,10 +33,10 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task1.V24.Lib
                 temp = 4 * i - 0.5;
                 if (temp == 0)
                 {
-                    ans += "0" + Environment.NewLine;
+                    ans += "0" + "\r\n";
                     continue;
                 }
-                ans += Math.Round(3 * Math.Cos(i) / temp + Math.Sin(i) - 5 * i - 2, 2) + Environment.NewLine;
+                ans += Math.Round(3 * Math.Cos(i) / temp + Math.Sin(i) - 5 * i - 2, 2) + "\r\n";
             }
 
             temp = 4 * stopValue - 0.5;
