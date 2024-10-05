@@ -36,7 +36,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task1.V24.Lib
                     ans += "0" + "\r\n";
                     continue;
                 }
-                ans += Math.Round(3 * Math.Cos(i) / temp + Math.Sin(i) - 5 * i - 2, 2) + "\r\n";
+                ans += Math.Round(3 * Math.Cos(i) / temp + Math.Sin(i) - 5 * i - 2, 2) + "\n";
             }
 
             temp = 4 * stopValue - 0.5;
