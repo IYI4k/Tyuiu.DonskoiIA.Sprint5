@@ -16,7 +16,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task3.V9
             Console.Title = "Спринт #5 | Выполнил: Донской И. А. | АСОиУб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Класс File. Запись набора данных в текстовый файл                 *");
+            Console.WriteLine("* Тема: Потоковый метод записи данных в бинарный файл                     *");
             Console.WriteLine("* Задание #3                                                              *");
             Console.WriteLine("* Вариант #9                                                              *");
             Console.WriteLine("* Выполнил: Донской Иван Андреевич | АСОиУб-24-1                          *");
