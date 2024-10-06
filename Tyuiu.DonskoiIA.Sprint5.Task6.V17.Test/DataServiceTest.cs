@@ -12,7 +12,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task6.V17.Test
             DataService ds = new DataService();
             string path = Path.Combine(new string[] { "C:", "DataSprint5", "InPutDataFileTask6V17.txt " });
             var res = ds.LoadFromDataFile(path);
-            Assert.AreEqual(8, res);
+            Assert.AreEqual(5, res);
         }
 
         /*[TestMethod]

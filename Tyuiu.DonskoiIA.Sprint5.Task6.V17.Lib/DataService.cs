@@ -21,22 +21,12 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task6.V17.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    bool check = false;
                     for (int i = 1; i < line.Length; i++)
                     {
                         if (line[i] == ' ' && line[i - 1] == ' ')
                         {
-                            check = true;
                             ans++;
                         }
-                        else if (check) {
-                            ans++;
-                            check = false;
-                        } 
-                    }
-                    if (check)
-                    {
-                        ans++;
                     }
                 }
 
