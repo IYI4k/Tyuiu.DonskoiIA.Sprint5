@@ -23,6 +23,9 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task7.V24.Lib
                 File.Delete(path2);
             }
 
+            string s = "";
+            bool check = false;
+
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
