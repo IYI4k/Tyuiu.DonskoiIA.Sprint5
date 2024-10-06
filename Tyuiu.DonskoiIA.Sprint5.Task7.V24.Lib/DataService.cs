@@ -58,7 +58,8 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task7.V24.Lib
 
             File.AppendAllText(path2, s);
 
-            return path2;
+            return s;
+            //return path2;
         }
     }
 }
