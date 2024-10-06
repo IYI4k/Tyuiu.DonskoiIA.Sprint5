@@ -16,7 +16,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task6.V17
             Console.Title = "Спринт #5 | Выполнил: Донской И. А. | АСОиУб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Класс File. Запись набора данных в текстовый файл                 *");
+            Console.WriteLine("* Тема: Обработка текстовых файлов                                        *");
             Console.WriteLine("* Задание #6                                                              *");
             Console.WriteLine("* Вариант #17                                                             *");
             Console.WriteLine("* Выполнил: Донской Иван Андреевич | АСОиУб-24-1                          *");
