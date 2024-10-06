@@ -23,15 +23,6 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task7.V24.Lib
                 File.Delete(path2);
             }
 
-            /*string s = "";
-            bool check = false;
-            string tempstr = Path.GetFullPath() + '\\';
-            foreach(string i in path.Split('\\'))
-            {
-                tempstr+= i;
-            }
-            path = Path.Combine(tempstr.Split('\\'));*/
-
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
