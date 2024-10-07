@@ -15,7 +15,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task7.V24.Lib
         public string LoadDataAndSave(string path)
         {
 
-            string path2 = Path.Combine(new string[] { "DataSprint5", "OutPutDataFileTask7V24.txt" });
+            string path2 = Path.Combine(new string[] { "OutPutDataFileTask7V24.txt" });
 
             FileInfo f = new FileInfo(path2);
             if (f.Exists)
