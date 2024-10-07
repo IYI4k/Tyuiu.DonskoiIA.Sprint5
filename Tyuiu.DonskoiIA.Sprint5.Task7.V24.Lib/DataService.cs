@@ -15,7 +15,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task7.V24.Lib
         public string LoadDataAndSave(string path)
         {
 
-            string path2 = Path.Combine(new string[] { "C:", "DataSprint5", "OutPutDataFileTask7V24.txt" });
+            string path2 = Path.Combine(new string[] { "DataSprint5", "OutPutDataFileTask7V24.txt" });
 
             FileInfo f = new FileInfo(path2);
             if (f.Exists)
@@ -23,10 +23,10 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task7.V24.Lib
                 File.Delete(path2);
             }
 
-            string temppath = Directory.GetCurrentDirectory() + '\\' + path;
+            //string temppath = Directory.GetCurrentDirectory() + '\\' + path;
 
 
-            path = Path.Combine(temppath.Split('\\'));
+            //path = Path.Combine(temppath.Split('\\'));
 
             string s = "";
             bool check = false;
