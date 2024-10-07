@@ -51,7 +51,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task7.V24.Lib
                     bool ru = false;
                     for (int i = 0; i < line.Length; i++)
                     {
-                        if (line[i] >= 'а' && line[i] <= 'я')
+                        if ((line[i] >= 'а' && line[i] <= 'я') || (line[i] >= 'А' && line[i] <= 'Я'))
                         {
                             ru = true;
                         }
