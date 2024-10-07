@@ -15,7 +15,16 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task7.V24.Lib
         public string LoadDataAndSave(string path)
         {
 
-            string path2 = path + ".txt";
+            string path2 = "";
+            string[] SplitedPath = path.Split('/');
+            string[] SplitedPath2 = new string[SplitedPath.Length];
+            for (int i = 0; i < SplitedPath.Length - 1; i++)
+            {
+                SplitedPath2[i] = SplitedPath[i];
+            }
+            SplitedPath2[SplitedPath.Length - 1] = "OutPutDataFileTask7V24.txt";
+
+            path2 = Path.Combine(SplitedPath2);
 
             FileInfo f = new FileInfo(path2);
             if (f.Exists)
