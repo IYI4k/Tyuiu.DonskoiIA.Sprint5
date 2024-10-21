@@ -22,25 +22,27 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task5.V30.Lib
 
                 while ((line = reader.ReadLine()) != null)
                 {
-                    int value = Convert.ToInt32(line);
-
-                    if (value == 2)
-                    {
-                        ans = Math.Max(ans, value);
-                        continue;
-                    }
-
-                    if (value > ans) {
-                        bool temp = true;
-                        for (int i = 2; i < Math.Pow(value, 0.5) + 1; i++)
+                    string[] arr = line.Split(' ');
+                    foreach (string value2 in arr) {
+                        int value = Convert.ToInt32(value2);
+                        if (value == 2)
                         {
-                            if (value % i == 0)
-                            {
-                                temp = false;
-                                break;
-                            }
+                            ans = Math.Max(ans, value);
+                            continue;
                         }
-                        if (temp) ans = value;
+
+                        if (value > ans) {
+                            bool temp = true;
+                            for (int i = 2; i < Math.Pow(value, 0.5) + 1; i++)
+                            {
+                                if (value % i == 0)
+                                {
+                                    temp = false;
+                                    break;
+                                }
+                            }
+                            if (temp) ans = value;
+                        }
                     }
                 }
             }
