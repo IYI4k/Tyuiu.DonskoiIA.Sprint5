@@ -24,6 +24,18 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task5.V30.Lib
                 {
                     string[] arr = line.Split(' ');
                     foreach (string value2 in arr) {
+                        bool check = false;
+                        foreach (char tempchar in value2)
+                        {
+                            if (tempchar == '.' || tempchar == ',')
+                            {
+                                check = true;
+                            }
+                        }
+                        if (check)
+                        {
+                            continue;
+                        }
                         int value = Convert.ToInt32(value2);
                         if (value == 2)
                         {
