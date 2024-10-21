@@ -45,7 +45,7 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task5.V30.Lib
                     }
                 }
             }
-            return (ans);
+            return Math.Round(ans, 3);
         }
     }
 }
