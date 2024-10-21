@@ -15,13 +15,10 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task4.V20.Lib
 
         public double LoadFromDataFile(string path)
         {
-
-            bool check = false;
-
             using (StreamReader reader = new StreamReader(path))
             {
                 string line = reader.ReadLine();
-                double x = int.Parse(line);
+                double x = Convert.ToDouble(line);
                 return Math.Round(Math.Pow((x * x) / Math.Sin(x), 3), 3);
             }
         }
