@@ -18,7 +18,28 @@ namespace Tyuiu.DonskoiIA.Sprint5.Task4.V20.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line = reader.ReadLine();
-                double x = Convert.ToDouble(line);
+                double x = 0;
+                int i = 0;
+                double del = 0;
+
+                while (i < line.Length)
+                {
+                    if (line[i] == '.' || line[i] == ',')
+                    {
+                        i++;
+                        del = line.Length - i;
+                        goto DOT;
+                    }
+                    x = x * 10 + line[i++] - '0';
+                }
+
+            DOT:
+                while (i < line.Length)
+                {
+                    x = x * 10 + line[i++] - '0';
+                }
+                if (del > 0) x = x / Math.Pow(10, del);
+
                 return Math.Round(Math.Pow((x * x) / Math.Sin(x), 3), 3);
             }
         }
